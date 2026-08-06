@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veille Tech DATASET</title>
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  
+</head>
+<body>
+    <div id="progress-bar"></div>
+     <header> 
+         <nav> 
+        <div class="logo">
+                <i class="bi bi-bar-chart-fill"></i>
+                DataVeille
+            </div>
+
+            <ul>    
+                 <li><a href="#accueil">Accueil</a></li>
+
+                 <li><a href="#Datasets">Datasets</a></li>
+
+                 <li><a href="#type">Types</a></li>
+
+                 <li><a href="#collecte">Contacte</a></li>
+
+                 <li><a href="#netoyage">Nétoyage</a></li>
+
+                 <li><a href="#analyse">Analyse</a></li>
+
+                 <li><a href="#outils">Outils</a></li>
+
+                 <li><a href="#exemple">Exemples</a></li>
+                 <li><a href="#references">Références</a></li>
+            </ul>
+            </nav> 
+     </header>
+<section class="hero" id="accueil">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            Veille Technologique 2026
+        </span>
+
+        <h1>
+            Collecte, Nettoyage et Analyse des Données
+        </h1>
+
+        <p>
+
+            Découvrez comment les données sont collectées,
+            préparées, nettoyées et analysées afin de produire
+            des informations fiables pour la prise de décision.
+
+        </p>
+
+        <div class="buttons">
+
+            <a href="#dataset" class="btn">
+                Commencer
+            </a>
+
+            <a href="#references" class="btn2">
+                Références
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-img">
+
+        <img src="images/hero.png">
+
+    </div>
+
+</section>
+
+     <section id="Datasets">
+         <h2>Qu'est-ce qu'un Dataset ?</h2>
+
+        <p>
+
+            Un dataset est une collection de données structurées, il prend le plus souvent la forme d'un tableau. 
+            Chaque ligne représente une observation et chaque
+            colonne représente une information.
+        </p>
+
+        <table>
+            <tr>
+
+                <th>ID</th>
+
+                <th>Nom</th>
+
+                <th>Âge</th>
+
+                <th>Ville</th>
+
+            </tr>
+
+            <tr>
+
+                <td>1</td>
+
+                <td>Mariam</td>
+
+                <td>23</td>
+
+                <td>Abidjan</td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td>
+
+                <td>Koffi</td>
+
+                <td>21</td>
+
+                <td>Bouaké</td>
+
+            </tr>
+
+            <tr>
+
+                <td>3</td>
+
+                <td>Awa</td>
+
+                <td>24</td>
+
+                <td>Yamoussoukro</td>
+
+            </tr>
+        </table>
+     </section>
+
+     <section id="type">
+        <h2>Types de Datasets</h2>
+<h2>Les différents types de Datasets</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="bi bi-table"></i>
+
+                <h3>Données Structurées</h3>
+
+                <p>
+
+                    Organisées sous forme de tableaux comme Excel, CSV
+                    ou les bases SQL.
+
+                </p>
+
+            </div>
+<div class="card">
+
+                <i class="bi bi-braces"></i>
+
+                <h3>Semi-Structurées</h3>
+
+                <p>
+
+                    Données JSON ou XML.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="bi bi-file-earmark-image"></i>
+
+                <h3>Non Structurées</h3>
+
+                <p>
+
+                    Images, vidéos, PDF, audio...
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+  <section id="collecte">
+
+     <h2>La collecte des données</h2>
+     <p class="intro">
+
+        La collecte des données est la première étape de tout projet de Data Science.
+        Elle consiste à récupérer des informations provenant de différentes sources afin
+        de constituer un dataset exploitable.
+
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <i class="bi bi-file-earmark-excel"></i>
+            <h3>Excel / CSV</h3>
+            <p>
+                Les entreprises utilisent souvent des fichiers Excel ou CSV pour
+                stocker leurs données.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="bi bi-database-fill"></i>
+            <h3>Bases de données</h3>
+            <p>
+                Les données sont récupérées depuis MySQL, PostgreSQL,
+                SQL Server ou Oracle.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="bi bi-cloud-arrow-down-fill"></i>
+            <h3>API</h3>
+            <p>
+                Les API permettent d'obtenir automatiquement des données
+                depuis des applications ou des sites web.
+            </p>
+        </div>
+
+    </div>
+
+  </section>
+
+  <!--========== NETTOYAGE ==========-->
+
+<section id="nettoyage">
+
+    <h2>Le nettoyage des données</h2>
+
+    <p>
+
+        Les données brutes contiennent souvent des erreurs. Avant toute analyse,
+        il est indispensable de les nettoyer afin d'obtenir des résultats fiables.
+
+    </p>
+
+    <table>
+
+        <tr>
+
+            <th>Problème</th>
+
+            <th>Solution</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Valeurs manquantes</td>
+
+            <td>Supprimer ou remplacer les valeurs</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Doublons</td>
+
+            <td>Supprimer les lignes répétées</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Valeurs incohérentes</td>
+
+            <td>Corriger ou supprimer</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Formats différents</td>
+
+            <td>Uniformiser les données</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<!--========== ANALYSE ==========-->
+
+<section id="analyse">
+
+    <h2>Analyse des données</h2>
+
+    <p>
+
+        Une fois les données nettoyées, elles peuvent être analysées afin
+        d'obtenir des informations utiles pour la prise de décision.
+
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="bi bi-graph-up-arrow"></i>
+
+            <h3>Statistiques</h3>
+
+            <p>
+
+                Moyenne, médiane, maximum, minimum,
+                fréquence...
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="bi bi-pie-chart-fill"></i>
+
+            <h3>Visualisation</h3>
+
+            <p>
+
+                Création de graphiques et tableaux de bord.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="bi bi-lightbulb-fill"></i>
+
+            <h3>Décision</h3>
+
+            <p>
+
+                Les résultats permettent d'aider les entreprises
+                à prendre de meilleures décisions.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--========== OUTILS ==========-->
+
+<section id="outils">
+
+<h2>Les principaux outils utilisés</h2>
+
+<table>
+
+<tr>
+
+<th>Outil</th>
+
+<th>Utilisation</th>
+
+</tr>
+
+<tr>
+
+<td>Excel</td>
+
+<td>Saisie et manipulation des données</td>
+
+</tr>
+
+<tr>
+
+<td>Python</td>
+
+<td>Analyse et automatisation</td>
+
+</tr>
+
+<tr>
+
+<td>Pandas</td>
+
+<td>Nettoyage des datasets</td>
+
+</tr>
+
+<tr>
+
+<td>NumPy</td>
+
+<td>Calcul scientifique</td>
+
+</tr>
+
+<tr>
+
+<td>Jupyter Notebook</td>
+
+<td>Développement interactif</td>
+
+</tr>
+
+<tr>
+
+<td>Power BI</td>
+
+<td>Visualisation des données</td>
+
+</tr>
+
+<tr>
+
+<td>SQL</td>
+
+<td>Gestion des bases de données</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!--========== EXEMPLE ==========-->
+
+<section id="exemple">
+
+<h2>Exemple pratique</h2>
+
+<p>
+
+Voici un exemple d'un dataset contenant plusieurs erreurs.
+
+</p>
+
+<table>
+
+<tr>
+
+<th>Nom</th>
+
+<th>Âge</th>
+
+<th>Ville</th>
+
+</tr>
+
+<tr>
+
+<td>Mariam</td>
+
+<td>23</td>
+
+<td>Abidjan</td>
+
+</tr>
+
+<tr>
+
+<td>Mariam</td>
+
+<td>23</td>
+
+<td>Abidjan</td>
+
+</tr>
+
+<tr>
+
+<td>Awa</td>
+
+<td></td>
+
+<td>Bouaké</td>
+
+</tr>
+
+<tr>
+
+<td>Jean</td>
+
+<td>150</td>
+
+<td>Daloa</td>
+
+</tr>
+
+</table>
+
+<h3>Après nettoyage</h3>
+
+<table>
+
+<tr>
+
+<th>Nom</th>
+
+<th>Âge</th>
+
+<th>Ville</th>
+
+</tr>
+
+<tr>
+
+<td>Mariam</td>
+
+<td>23</td>
+
+<td>Abidjan</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!--========== REFERENCES ==========-->
+
+<section id="references">
+
+<h2>Références</h2>
+
+<ul>
+
+<li>Documentation officielle de Python</li>
+
+<li>Documentation officielle de Pandas</li>
+
+<li>Documentation officielle de NumPy</li>
+
+<li>Documentation officielle de Microsoft Power BI</li>
+
+<li>Documentation officielle de Jupyter Notebook</li>
+
+<li>Kaggle</li>
+
+<li>IBM SkillsBuild</li>
+
+</ul>
+
+
+</section>
+
+<footer>
+
+<h3>Veille Technologique - Dataset</h3>
+
+<p>
+
+Réalisée dans le cadre d'un travail de recherche sur la Data Science.
+
+</p>
+
+<p>
+
+© 2026 Tous droits réservés.
+
+</p>
+
+</footer>
+<button id="top">
+↑
+</button>
+    
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
