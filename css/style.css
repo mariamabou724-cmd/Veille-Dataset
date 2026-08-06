@@ -67,6 +67,9 @@ nav a{
 
     margin:auto;
 
+    justify-content:space-between;
+
+    padding-top:120px;
 }
 
 .hero-text{
@@ -204,19 +207,7 @@ table td{
 
 }
 
-.hero{
 
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding-top:120px;
-
-min-height:100vh;
-
-}
 
 .hero-content{
 
@@ -482,11 +473,72 @@ margin:10px;
 
 
 /* Responsive téléphone */
-@media(max-width:768px){
+@media screen and (max-width: 768px) {
 
-    .form-collecte {
-        width: 90%;
-        padding: 20px;
+    nav {
+        flex-direction: column;
+        padding: 15px;
     }
 
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero-text,
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1,
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero p,
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-image img,
+    .hero-img img {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 30px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        width: 95%;
+        padding: 80px 0;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    #top {
+        width: 45px;
+        height: 45px;
+    }
 }
