@@ -12,6 +12,8 @@ html{
 body{
     background:#f5f7fa;
     color:#222;
+    Overflow-x:hidden;
+    margin:0;
 }
 
 header{
@@ -120,7 +122,7 @@ nav a{
 
 section{
 
-    width:90%;
+    width:100%;
 
     margin:auto;
 
@@ -143,8 +145,8 @@ table{
     width:100%;
 
     border-collapse:collapse;
-
-    margin-top:40px;
+    overflow-x:auto;
+    display:block;
 
 }
 
@@ -287,6 +289,10 @@ text-decoration:none;
 
 color:#2563eb;
 
+}
+img{
+    max-width:100%;
+    height:auto;
 }
 
 .hero-img img{
@@ -473,72 +479,32 @@ margin:10px;
 
 
 /* Responsive téléphone */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero-content,
+    .hero-img{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
 
     nav {
         flex-direction: column;
-        padding: 15px;
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
-        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
     }
 
-    nav li {
+    nav ul li {
         margin: 10px 0;
     }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 120px;
-    }
-
-    .hero-text,
-    .hero-content {
-        width: 100%;
-    }
-
-    .hero h1,
-    .hero-text h1 {
-        font-size: 35px;
-    }
-
-    .hero p,
-    .hero-text p {
-        font-size: 18px;
-    }
-
-    .hero-image img,
-    .hero-img img {
-        width: 100%;
-        max-width: 350px;
-        margin-top: 30px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    section {
-        width: 95%;
-        padding: 80px 0;
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-
-    #top {
-        width: 45px;
-        height: 45px;
-    }
 }
