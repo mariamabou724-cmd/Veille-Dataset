@@ -354,6 +354,10 @@ display:none;
 transition:.4s;
 
 }
+p {
+    font-size: 20px;
+    line-height: 1.7; /* Espace entre les lignes pour faciliter la lecture */
+}
 
 .card:hover{
 
@@ -389,4 +393,100 @@ margin:10px;
 }
 @media screen and (max-width: 768px) {
     /* adaptation téléphone */
+}
+/* Section collecte des données */
+#collecte h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#collecte h3 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+#collecte p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#collecte ul {
+    padding-left: 30px;
+}
+
+#collecte li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Image illustration */
+#collecte img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* collecte*/
+
+/* Formulaire de collecte des données */
+.form-collecte {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-collecte label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #333;
+}
+
+.form-collecte input,
+.form-collecte select,
+.form-collecte textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-collecte input:focus,
+.form-collecte select:focus,
+.form-collecte textarea:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 5px rgba(13,110,253,0.3);
+}
+
+.form-collecte button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-collecte button:hover {
+    background-color: #084298;
+}
+
+
+/* Responsive téléphone */
+@media(max-width:768px){
+
+    .form-collecte {
+        width: 90%;
+        padding: 20px;
+    }
+
 }
